@@ -13,4 +13,3 @@ def diff(x, y=0, TOL=9):
         raise TypeError(
                 "diff accepts only float or int arguments.")
     return round(x - y, TOL)
-
