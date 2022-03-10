@@ -37,9 +37,9 @@ class TestSubtract(unittest.TestCase):
         """
         Test that insensible input gives the right error
         """
-        self.assertRaises(ValueError, diff, "hi", 6)
-        self.assertRaises(ValueError, diff, 2., "bonjour")
-        self.assertRaises(ValueError, diff, "hola")
+        self.assertRaises(TypeError, diff, "hi", 6)
+        self.assertRaises(TypeError, diff, 2., "bonjour")
+        self.assertRaises(TypeError, diff, "hola")
 
 
 if __name__ == '__main__':
